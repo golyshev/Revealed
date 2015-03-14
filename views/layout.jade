@@ -1,0 +1,36 @@
+//- layout.jade
+doctype html
+html(lang='en')
+  head
+    block title
+      title Revealed
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+
+    link(rel="shortcut icon", href="/favicon.ico", type="image/x-icon")
+    link(rel="icon", href="/favicon.ico", type="image/x-icon")      
+
+    link(rel='stylesheet', type='text/css', href='css/style.css')
+    link(href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700', rel='stylesheet', type='text/css')
+    link(href='css/font-awesome/font-awesome.css', rel='stylesheet')
+    link(href='css/toggle-style.css', rel='stylesheet')
+
+  body
+    .logo
+      img(src='images/Reveal-logo.svg', height='15')
+      | &#x9;Revealed      
+      block row-content
+
+    footer
+      img(src='images/globe.png', height='24')
+      p
+        | Powered by 
+        a(href='http://www.ibm.com/smarterplanet/us/en/ibmwatson/') IBM Watson         
+
+    script(type='text/javascript', src='/js/jquery-1.11.1.min.js')
+    script(type='text/javascript', src='/js/jquery.ui.widget.js')
+    script(type='text/javascript', src='/js/jquery.fileupload.js')
+    script(type='text/javascript', src='/js/jquery.iframe-transport.js')
+    script(type='text/javascript', src='/js/ion.sound.js')
+    script(type='text/javascript', src='/js/demo.js')

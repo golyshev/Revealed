@@ -1,0 +1,8 @@
+applications:
+- services:
+  - visual-recognition-service
+  - text-to-speech-service
+  name: revealed
+  command: node app.js
+  path: .
+  memory: 128M

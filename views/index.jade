@@ -1,0 +1,14 @@
+//- index.jade
+extends ./layout.jade
+
+block row-content
+  .container
+    div.row
+      #photobox
+        video#video
+      canvas(style='display:none')#canvas
+      div(style='display:none')
+        form.upload-form#fileupload(method='POST', enctype='multipart/form-data', action='/')
+          input#file(type='file',name='image', accept='image/x-png, image/jpg, image/gif, image/jpeg, image/png', title='Choose an image to upload')
+    div.result#js-results
+    audio.audio(autoplay, preload='auto', autobuffer, controls, style='display:none')

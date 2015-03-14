@@ -1,0 +1,6 @@
+node_modules
+uploads/
+.DS_Store
+npm-debug.log
+secret-config.json
+app.js.secure
